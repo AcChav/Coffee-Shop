@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./Images/web-icon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+  <title>Coffee Shop</title>
+</head>
+<body id="home">
+  <div class="homepage">
+    <header>
+      <nav>
+        <ul class="navi">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#brew">Brew</a></li>
+          <img src="./Images/logo.svg" alt="">
+          <h2><a href="#home"><span>Coffee Shop</span></a></h2>
+          <li><a href="#about">About</a></li>
+          <li><a href="#branches">Branches</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="intro-container">
+      <div class="intro-content">
+        <p>Delicious <span>Coffee!</span></p>
+        <h3>Try now while its still hot!</h3>
+        <button onclick="orderBtn()">Order now!</button>
+      </div>
+    </div>
+  </div>
+<section class="flavor" id="brew">
+  <h1>Choose<span> your own brew!</span></h1>
+  <div class="content-section">
+      <div class="cold-brew">
+        <h2><span>Cold</span> brew</h2>
+        <img src="./Images/Hot-brew.jpg" alt="coffee-cold-brew">
+        <p>Perfect for hot days! It has a refreshing flavor</p>
+      </div>
+      <div class="hot-brew">
+        <h2><span>Hot</span> brew</h2>
+        <img src="./Images/Hot-brew.jpg" alt="coffee-hot-brew">
+        <p>Number one choice for late at night!</p>
+      </div>
+  </div> 
+</section>
+
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="image">
+      <img src="./Images/location.jpg" alt="">
+    </div>
+    <div class="desc">
+      <h1><span>About us</span></h1> 
+      <h2>Coffee Shop that you'll love</h2>
+      <p>
+        Founded since 1990's in the Philippines. <br>
+        Has a thousand of branches all over the world! <br>
+      </p>
+      <button onclick="readBtn()">Read more</button>
+    </div>
+  </div>
+</section>
+<section class="location" id="branches">
+  <h1><span>Locations</span></h1> 
+  <div class="card-container">
+    <div class="card-1">
+      <img src="./Images/manila.jpg" alt="">
+      <h2>Manila branch</h2>
+    </div>
+    <div class="card-2">
+      <img src="./Images/angono.jpg" alt="">
+      <h2>Angono branch</h2>
+    </div>
+    <div class="card-3">
+      <img src="./Images/quezon.jpg" alt="">
+      <h2>Quezon branch</h2>
+    </div>
+  </div>
+</section>
+
+<section class="map">
+  <div class="map-container">
+    <div class="map-1">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1623.8524107832736!2d121.15323147879386!3d14.530911320118912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c6c483e3cf31%3A0xdc5cb300f8d25850!2sStarbucks%20-%20SM%20Center%20Angono!5e0!3m2!1sen!2sph!4v1658797227062!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="map-2">
+      <h2>The <span>map</span></h2>
+      <p>
+        The coffee shop started here first in Angono, Rizal. <br>
+        The Art Capital of the Philippines! <br>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="footer-container">
+    <div class="logo">
+      <img src="./Images/logo.svg" alt="">
+      <h2><span>Coffee Shop</span></h2>
+    </div>
+    <div class="foot-list-1">
+      <h2>Additional Info.</h2>
+      <ul>
+        <li>Address: Blck#9 Sta. Mesa, Manila</li>
+        <li>Contact: +999 999 999</li>
+        <li>Email: coffeeshop@gmail.com</li>
+      </ul>
+    </div>
+    <div class="foot-list-2">
+      <h2>External links</h2>
+      <ul>
+        <li><a href="https://www.starbucks.com/account/signin?ReturnUrl=%2F">Sign in</a></li>
+        <li><a href="https://www.starbucks.com/account/create">Register</a></li>
+        <li><a href="#home">Go up</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function readBtn() {
+    window.location.assign("https://www.starbucks.com/about-us/");
+  }
+  function orderBtn() {
+    window.location.assign("https://www.starbucks.com/menu");
+  }
+</script>
+</body>
+</html>
